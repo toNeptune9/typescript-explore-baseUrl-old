@@ -1,0 +1,12 @@
+{
+  "name": "typescript-explore-baseurl-old",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Repro/project for TypeScript baseUrl resolution behavior before TS 6",
+  "scripts": {
+    "trace:ts5": "npx -y -p typescript@5.9.2 tsc -p tsconfig.json --traceResolution --pretty false",
+    "check:ts5": "npx -y -p typescript@5.9.2 tsc -p tsconfig.json --noEmit",
+    "trace:next": "npx -y -p typescript@next tsc -p tsconfig.json --traceResolution --pretty false",
+    "check:next": "npx -y -p typescript@next tsc -p tsconfig.json --noEmit"
+  }
+}
